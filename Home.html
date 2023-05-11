@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Evalee Home Page</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="script.js"></script>
+  </head>
+  <title>Ma page HTML</title>
+
+</head>
+<body>
+  <!-- Contenu de ta page HTML -->
+</body>
+</html>
+  <style>
+
+    #elementgauche {float:left;}
+    #elementdroit {float:right;}
+
+    .dbbest-scrolling-section {
+      overflow-x: auto; /* Enable horizontal scrolling */
+      white-space: nowrap; /* Prevent images from wrapping */
+    }
+    .dbbest-scrolling-section img {
+      display: inline-block; /* Display images side-by-side */
+      margin-right: 1rem; /* Add some space between images */
+      border-radius: 8px;
+    }
+
+  </style>
+  <body>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="logo.png" width="112" height="28">
+        </a>
+        <span class="navbar-burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+      </div>
+      <div id="navbarMenuHeroA" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#">Home</a>
+          <a class="navbar-item" href="#">About</a>
+          <a class="navbar-item" href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+        <div class = "container">
+            <div id="elementgauche">
+               <h1 class="title ">Welcome on Evalee.fr</h1>
+                <h2 class="subtitle">This is a 4th year project of the EPF.</h2> 
+            </div>
+            <div id="elementdroit">
+               <!-- Partie upload -->
+              <link rel="stylesheet" href="pdf_viewer.css">
+              <div class="file is-link is-box">
+                <label class="file-label">
+                  <input class="file-input" type="file" name="resume" id="pdf_file" onchange="displayFile()">
+                  <span class="file-cta">
+                    <span class="file-label">
+                      Upload your file
+                    </span>
+                  </span>
+                </label>
+              </div>
+              <div id="pdf-viewer"></div>
+            
+              <script src="pdf.js"></script>
+              <script src="pdf.worker.js"></script>
+              <div id="file-content"></div>
+              <div class="columns">
+                <div class="column is-one-third">
+                </div>
+              </div>
+              <div id="elementdroit">
+                <button class="button is-primary" onclick="window.location.href='Correction_part1.html'">Start !</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h3 class="title">What is it ?</h3>
+            <p>
+              An artificial intelligence that segments and corrects handwritten copies of your exams, all gathered on a website.
+              Are you a teacher? Save time and make your life easier. Are you a student? Benefit from quick and impartial correction.
+            </p>
+        </div>
+    </section>
+
+    <div class ="db-best">
+      <div class="dbbest-scrolling-section">
+        <a class="bd-screenshot bd-best-item">
+          <img src="Illustration1.png" width="336" height="210">
+        </a>
+        <a class="bd-screenshot bd-best-item">
+          <img src="Illustration1.png" width="336" height="210">
+        </a>
+        <a class="bd-screenshot bd-best-item">
+          <img src="Illustration1.png" width="336" height="210">
+        </a>
+        <a class="bd-screenshot bd-best-item">
+          <img src="Illustration1.png" width="336" height="210">
+        </a>
+        <a class="bd-screenshot bd-best-item">
+          <img src="Illustration1.png" width="336" height="210">
+        </a>
+        <a class="bd-screenshot bd-best-item">
+          <img src="Illustration1.png" width="336" height="210">
+        </a>
+      </div>
+    </div> 
+
+    <section class="section">
+        <div class="container">
+            <h3 class="title">Contact us :</h3>
+            <form>
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                    <input class="input" type="text" placeholder="Your name">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                    <input class="input" type="email" placeholder="Your email">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+  </body>
+</html>
+    
+

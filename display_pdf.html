@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display PDF Example</title>
+    </head>
+    <body>
+        <embed src="{{ pdfUrl }}" type="application/pdf" width="100%" height="100%">
+    </body>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const pdfUrl = urlParams.get('pdfUrl');
+      
+        const embed = document.createElement('embed');
+        embed.src = decodeURIComponent(pdfUrl); // decode the URL before setting the src attribute
+        embed.type = 'application/pdf';
+        embed.width = '100%';
+        embed.height = '100%';
+      
+        document.body.appendChild(embed);
+      </script>
+
+</html>

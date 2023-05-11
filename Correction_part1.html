@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Teacher's Grading Tool</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+  </head>
+
+  <style>
+    #elementgauche {float:left;}
+    #elementdroit {float:right;}
+    #elementcentre{float:center;}
+  </style>
+  <body>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="logo.png" width="112" height="28">
+        </a>
+        <span class="navbar-burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+      </div>
+      <div id="navbarMenuHeroA" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#">Home</a>
+          <a class="navbar-item" href="#">About</a>
+          <a class="navbar-item" href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container">
+        <div id="elementgauche">
+          <h1 class="title">Exercise 1/10 :</h1>
+          <h2 class="subtitle"><br>Grade the following answers</h2>
+        </div>
+        <div id="elementdroit">
+          <button class="button is-link is-medium">Next</button>
+        </div>
+      </div>
+    </section>
+   
+    <section class="section">
+      <div class="container is-widescreen" id="elementcentre">
+        <div class="columns">
+          <div class="column is-one-third">
+          </div>
+        </div>
+
+        <!--Q1-->
+        <div class="columns">
+          <div class="column is-one-third">
+            <figure class="image">
+              <img src="Q1.png" alt="Student's Answer">
+            </figure>
+          </div>
+        
+          <div class="column">
+            <form>
+              <div class="field">
+                <label class="label">Question 1 Grade</label>
+                <div class="control">
+                  <div class="buttons">
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(1, 1, this)">0</button>
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(2, 1, this)">1</button>
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(3, 1, this)">2</button>
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(4, 1, this)">3</button>
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(5, 1, this)">4</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!--Q2-->
+        <div class="columns">
+          <div class="column is-one-third">
+            <figure class="image">
+              <img src="Q2.png" alt="Student's Answer">
+            </figure>
+          </div>
+        
+          <div class="column">
+            <form>
+              <div class="field">
+                <label class="label">Question 2 Grade</label>
+                <div class="control">
+                  <div class="buttons">
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(1, 1, this)">0</button>
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(2, 1, this)">1</button>
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(3, 1, this)">2</button>
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(4, 1, this)">3</button>
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(5, 1, this)">4</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!--Q3-->
+        <div class="columns">
+          <div class="column is-one-third">
+            <figure class="image">
+              <img src="Q3.png" alt="Student's Answer">
+            </figure>
+          </div>
+        
+          <div class="column">
+            <form>
+              <div class="field">
+                <label class="label">Question 3 Grade</label>
+                <div class="control">
+                  <div class="buttons">
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(1, 1, this)">0</button>
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(2, 1, this)">1</button>
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(3, 1, this)">2</button>
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(4, 1, this)">3</button>
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(5, 1, this)">4</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <!--Q4-->
+        <div class="columns">
+          <div class="column is-one-third">
+            <figure class="image">
+              <img src="Q4.png" alt="Student's Answer">
+            </figure>
+          </div>
+        
+          <div class="column">
+            <form>
+              <div class="field">
+                <label class="label">Question 4 Grade</label>
+                <div class="control">
+                  <div class="buttons">
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(1, 1, this)">0</button>
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(2, 1, this)">1</button>
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(3, 1, this)">2</button>
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(4, 1, this)">3</button>
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(5, 1, this)">4</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+
+        <!--Q5-->
+        <div class="columns">
+          <div class="column is-one-third">
+            <figure class="image">
+              <img src="Q5.png" alt="Student's Answer">
+            </figure>
+          </div>
+        
+          <div class="column">
+            <form>
+              <div class="field">
+                <label class="label">Question 5 Grade</label>
+                <div class="control">
+                  <div class="buttons">
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(1, 1, this)">0</button>
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(2, 1, this)">1</button>
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(3, 1, this)">2</button>
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(4, 1, this)">3</button>
+                    <button class="button is-link is-outlined" type="button" onclick="setGrade(5, 1, this)">4</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!--fin de la section-->
+      </div>
+    </section>
+
+    <script>
+      // array to store the grades for each question
+      var grades = [];
+
+      // function to set the grade for a question
+      function setGrade(grade, question, button) {
+        // subtract 1 from the question number to match the array index
+        question = question - 1;
+
+        // Remove the 'is-active' class from all buttons in the group
+        var buttons = button.parentNode.querySelectorAll('button');
+        buttons.forEach(function(btn) {
+          btn.classList.remove('is-active');
+        });
+        
+        // Add the 'is-active' class to the clicked button
+        button.classList.add('is-active');
+
+        // set the grade for the specified question
+        grades[question] = grade;
+        console.log('Grade for question ' + (question + 1) + ': ' + grade);
+        console.log('All grades: ' + grades);
+      }
+
+    </script>
+  </body >
+</html>
